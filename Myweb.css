@@ -65,7 +65,7 @@ body {
 }
 
 
-.social a{
+.social a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -90,11 +90,13 @@ hr {
     background-color: #bdbdbd;
     margin: 20px 0;
 }
-nav a{
+
+nav a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 12px 18px;   /* Yazı ilə border arasında məsafə */
+    padding: 12px 18px;
+    /* Yazı ilə border arasında məsafə */
     border-radius: 12px;
     text-decoration: none;
     color: #F5F5DC;
@@ -104,31 +106,20 @@ nav a{
 
 nav a:hover {
     cursor: pointer;
-     color:  #F5F5DC; /* üstünə gələndə rəng */
+    color: #F5F5DC;
+    /* üstünə gələndə rəng */
     background-color: #9c5a34;
     border: 3px solid #F5F5DC;
     border-radius: 10px;
 }
 
-.Ins:active{
+.Ins:active {
     cursor: pointer;
-    color:  #F5F5DC; /* üstünə gələndə rəng */
+    color: #F5F5DC;
+    /* üstünə gələndə rəng */
 }
 
-.Ins:hover{
-    cursor: pointer;
-    background-color: #9c5a34;
-    border: 3px solid #F5F5DC;
-    border-radius: 12px;
-    padding: 12px 18px;
-}
-
-.Github:active{
-    cursor: pointer;
-    color:  #F5F5DC; /* üstünə gələndə rəng */
-}
-
-.Github:hover{
+.Ins:hover {
     cursor: pointer;
     background-color: #9c5a34;
     border: 3px solid #F5F5DC;
@@ -136,12 +127,27 @@ nav a:hover {
     padding: 12px 18px;
 }
 
-.Linkedin:active{
+.Github:active {
     cursor: pointer;
-    color:  #F5F5DC; /* üstünə gələndə rəng */
+    color: #F5F5DC;
+    /* üstünə gələndə rəng */
 }
 
-.Linkedin:hover{
+.Github:hover {
+    cursor: pointer;
+    background-color: #9c5a34;
+    border: 3px solid #F5F5DC;
+    border-radius: 12px;
+    padding: 12px 18px;
+}
+
+.Linkedin:active {
+    cursor: pointer;
+    color: #F5F5DC;
+    /* üstünə gələndə rəng */
+}
+
+.Linkedin:hover {
     cursor: pointer;
     background-color: #9c5a34;
     border: 3px solid #F5F5DC;
@@ -150,41 +156,40 @@ nav a:hover {
 }
 
 .Github {
-      background: linear-gradient(
-        90deg,
-        #F5F5DC 0%,
-        #D6D3D1 50%,
-        #A8A29E 100%
-    );
+    background: linear-gradient(90deg,
+            #F5F5DC 0%,
+            #D6D3D1 50%,
+            #A8A29E 100%);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
-     transition: 0.3s;
+    transition: 0.3s;
 }
 
 .Linkedin {
     text-decoration: none;
-     background: linear-gradient(90deg, #7DD3FC, #38BDF8, #2563EB);
+    background: linear-gradient(90deg, #7DD3FC, #38BDF8, #2563EB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-     transition: 0.3s;
+    transition: 0.3s;
 }
 
 .Ins {
     text-decoration: none;
-     background: linear-gradient(90deg, #A855F7, #EC4899, #F97316);
+    background: linear-gradient(90deg, #A855F7, #EC4899, #F97316);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
-      /* Yazı ilə border arasında məsafə */
+    /* Yazı ilə border arasında məsafə */
     border-radius: 12px;
 }
 
-.social .fa-arrow-up-right-from-square{
+.social .fa-arrow-up-right-from-square {
     margin-left: auto;
 }
-.social i{
+
+.social i {
     margin-right: 5px;
     font-size: 28px;
 }
@@ -195,34 +200,34 @@ nav a.active {
     border-radius: 10px;
 }
 
-.menu-btn{
+.menu-btn {
     display: none;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .menu-btn{
-        display:flex;
-        align-items:center;
-        justify-content:center;
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        position:fixed;
-        top:15px;
-        left:15px;
+        position: fixed;
+        top: 15px;
+        left: 15px;
 
-        width:60px;
-        height:60px;
+        width: 60px;
+        height: 60px;
 
-        background:#864622;
-        color:#fff;
-        border:none;
-        border-radius:10px;
+        background: #864622;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
 
-        font-size:34px;
-        cursor:pointer;
-        z-index:1002;
+        font-size: 34px;
+        cursor: pointer;
+        z-index: 1002;
 
-        transition:.3s;
+        transition: .3s;
     }
 
 }
@@ -236,9 +241,9 @@ nav a.active {
 }
 
 .about {
-   font-size: 24px;
-   justify-content: left;
-   align-items: center;
+    font-size: 24px;
+    justify-content: left;
+    align-items: center;
     color: #F5F5DC;
 }
 
@@ -246,33 +251,34 @@ nav a.active {
     color: #800020;
 }
 
-#source{
-      color: #F5F5DC;
+#source {
+    color: #F5F5DC;
     position: absolute;
     right: 20px;
     font-size: 18px;
 }
 
-#source:hover{
-      color: #F5F5DC;
+#source:hover {
+    color: #F5F5DC;
 
 }
 
-#source:active{
+#source:active {
     color: #F5F5DC;
 }
 
-#soon{
+#soon {
     font-size: 20px;
     color: white;
 
 }
-#size18{
+
+#size18 {
     font-size: 18px;
-      color: #F5F5DC;
+    color: #F5F5DC;
 }
 
-.basliqlar{
+.basliqlar {
     font-size: 28px;
     text-decoration: bold;
     color: #F5F5DC;
@@ -293,7 +299,7 @@ nav a.active {
 .eyni hr {
     flex: 1;
     border: none;
-    border-top: 2px  black;
+    border-top: 2px black;
 }
 
 .eyni:hover {
@@ -310,123 +316,157 @@ nav a.active {
 
 
 .reng {
-    background: linear-gradient(
-        90deg,
-        #33D6FF 0%,
-        #1CBFFF 50%,
-        #008CFF 100%
-
-
-    );
+    background: linear-gradient(90deg,
+            #33D6FF 0%,
+            #1CBFFF 50%,
+            #008CFF 100%);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .reng:hover {
-    background: linear-gradient(
-    90deg,
-    #CFFAFE 0%,
-    #7DD3FC 40%,
-    #3B82F6 100%
-);
-
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-#magma{
-     background: linear-gradient(
-        90deg,
-        #FFFFFF 0%,
-        #F8FAFC 50%,
-        #E2E8F0 100%
-    );
+    background: linear-gradient(90deg,
+            #CFFAFE 0%,
+            #7DD3FC 40%,
+            #3B82F6 100%);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#gi{
-     background: linear-gradient(
-        90deg,
-        #F5F5DC 0%,
-        #D6D3D1 50%,
-        #A8A29E 100%
-    );
+#magma {
+    background: linear-gradient(90deg,
+            #FFFFFF 0%,
+            #F8FAFC 50%,
+            #E2E8F0 100%);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#in{
-     background: linear-gradient(90deg, #A855F7, #EC4899, #F97316);
+#gi {
+    background: linear-gradient(90deg,
+            #F5F5DC 0%,
+            #D6D3D1 50%,
+            #A8A29E 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#in {
+    background: linear-gradient(90deg, #A855F7, #EC4899, #F97316);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 
-#li{
-      background: linear-gradient(90deg, #7DD3FC, #38BDF8, #2563EB);
+#li {
+    background: linear-gradient(90deg, #7DD3FC, #38BDF8, #2563EB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .menu-btn{
-        display:block;
-        position:fixed;
-        top:15px;
-        left:15px;
-        z-index:1001;
-        background:#864622;
-        color:white;
-        border:none;
-        border-radius:8px;
-        padding:8px 12px;
-        font-size:28px;
-        cursor:pointer;
+    .menu-btn {
+        display: block;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 1001;
+        background: #864622;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 12px;
+        font-size: 28px;
+        cursor: pointer;
     }
 
-    .left{
-        position:fixed;
-        top:0;
-        left:0;
-        width:280px;
-        height:100vh;
-        transform:translateX(-100%);
-        transition:0.3s;
-        z-index:1000;
+    .left {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: 0.3s;
+        z-index: 1000;
     }
 
-    .left.active{
-        transform:translateX(0);
+    .cerceve {
+        width: calc(100% - 40px);
+        margin: 20px;
+        box-sizing: border-box;
     }
 
-  
+    .Development {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
 
-    .right{
+    .icons {
+        gap: 15px;
+    }
+
+    .icon {
+        width: 55px;
+    }
+
+    .ust {
+        font-size: 18px;
+    }
+
+    .alt {
+        font-size: 15px;
+    }
+
+    .text {
+        min-width: 0;
+    }
+
+    .text span {
+        word-break: break-word;
+    }
+
+    .left.active {
+        transform: translateX(0);
+    }
+
+     .cerceve{
         width:100%;
-        padding:20px;
-        min-height:100vh;
-        background-color:#4D2713;
+        max-width:100%;
+        box-sizing:border-box;
+        margin:20px 0;
+    }
+А
+
+
+    .right {
+        width: 100%;
+        padding: 20px;
+        padding-top: 90px;
+        min-height: 100vh;
+        background-color: #4D2713;
     }
 
-    .container{
-        display:block;
+    .container {
+        display: block;
     }
 
 }
 
-.page{
+.page {
     display: none;
 }
 
-.page.active{
+.page.active {
     display: block;
 }
+
 .Development {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -434,11 +474,12 @@ nav a.active {
     margin: 30px auto 0;
     max-width: 1200px;
 }
+
 .icons {
     display: flex;
     align-items: center;
     gap: 20px;
-    
+
 
 }
 
@@ -447,13 +488,14 @@ nav a.active {
     border: 2px solid #F5F5DC;
     padding: 20px;
     width: 500px;
-    margin: 40px auto; /* ortalayır */
+    margin: 40px auto;
+    /* ortalayır */
 }
 
 .ust {
     font-size: 22px;
     font-weight: bold;
-     color: #F5F5DC;
+    color: #F5F5DC;
 }
 
 .alt {
