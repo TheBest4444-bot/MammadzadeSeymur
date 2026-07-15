@@ -1,40 +1,61 @@
-
 const links = document.querySelectorAll("nav a");
+
 
 links.forEach(link => {
     link.addEventListener("click", function (e) {
+
         e.preventDefault();
 
-        links.forEach(l => l.classList.remove("active"));
-        this.classList.add("active");
+        const id = this.getAttribute("href").substring(1);
+
+        showPage(id);
+
+        // URL yadda saxlayır
+        history.pushState(null, null, "#" + id);
+
     });
 });
 
-function toggleMenu() {
-
-    const sidebar = document.querySelector(".left");
-    const button = document.querySelector(".menu-btn");
-
-    sidebar.classList.toggle("active");
-
-    if (sidebar.classList.contains("active")) {
-        button.innerHTML = "✕";
-        button.style.left = "235px";
-    } else {
-        button.innerHTML = "☰";
-        button.style.left = "15px";
-    }
-
-}
 
 function showPage(id){
 
-    const pages=document.querySelectorAll(".page");
+    const pages = document.querySelectorAll(".page");
 
     pages.forEach(page=>{
         page.classList.remove("active");
     });
 
-    document.getElementById(id).classList.add("active");
+
+    const current = document.getElementById(id);
+
+    if(current){
+        current.classList.add("active");
+    }
+
+
+    links.forEach(link=>{
+        link.classList.remove("active");
+
+        if(link.getAttribute("href") === "#" + id){
+            link.classList.add("active");
+        }
+    });
 
 }
+
+
+
+// səhifə yenilənəndə işləyir
+window.addEventListener("load", ()=>{
+
+    const page = location.hash.substring(1);
+
+
+    if(page && document.getElementById(page)){
+        showPage(page);
+    }
+    else{
+        showPage("home");
+    }
+
+});
